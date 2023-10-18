@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+
+  min-height: 100vh;
+
+  background-image: url('/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* = ao object fit*/
+
+  header{
+    width: 100%;
+
+    .header_content{
+      width: 100%;
+      max-width: 1366px;
+
+      margin: 0 auto;
+    }
+
+    
+  }
+  main{
+    flex: 1; /*main ocupa todo restante disponível*/
+    
+
+    width: 100%;
+    max-width: 1366px;
+
+    margin: 0 auto;
+  }
+} 
