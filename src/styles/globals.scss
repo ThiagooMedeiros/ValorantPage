@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Druk';
+  src: url('/font/druk-medium.otf'); //next 
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Druk';
+  src: url('/font/druk-bold.otf'); //next 
+  font-weight: bold;
+  font-display: swap;
+}
 :root {
   --white: #FFFFFF;
   --black: #1F2326;
