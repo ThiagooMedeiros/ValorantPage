@@ -8,7 +8,7 @@
 
   margin: 0 auto;
 
-  .title{
+  .title{   
     position: relative;
     margin-right: 24px;
 
@@ -29,7 +29,10 @@
     }
   }
 }
-.characteres{
+.agents{
   flex: 1; /*main ocupa todo restante disponível*/
   background: blue;
+
+  display: flex;
+  column-gap: 16px;
 }
