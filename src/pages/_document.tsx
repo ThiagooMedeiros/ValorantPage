@@ -6,14 +6,13 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-        <title>Valorant</title>
+        <title>Valorant Page</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta charSet="utf-8" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
-        <meta property="og:site_name" content="Valorant" />
-        <meta name="author" content="Leonardo Luis de Vargas" />
+        <meta property="og:site_name" content="Valorant Page" />
 
         <link
           rel="stylesheet"
