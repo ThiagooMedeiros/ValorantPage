@@ -1,6 +1,9 @@
 import Image from "next/image"
 import styles from "./styles.module.scss"
 import { Agent } from "components/Agent"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+
 
 const agent = {
   uuid: '8e253930-4c05-31dd-1b6c-968525494517',
@@ -64,11 +67,23 @@ export const Main = () =>
       <h1>Agentes</h1>
     </div>
     
-    <div className={styles.agents}>
-      <Agent agent={agent}/>
-      <Agent agent={agent}/>
-      <Agent agent={agent}/>
-      <Agent agent={agent}/>
-    </div>
+    <Swiper className={styles.agents} spaceBetween={16} slidesPerView={4}>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+      <SwiperSlide><Agent agent={agent}/></SwiperSlide>
+    </Swiper>
     
   </main>

@@ -30,8 +30,5 @@
   }
 }
 .agents{
-  flex: 1; /*main ocupa todo restante disponível*/
-
-  display: flex;
-  column-gap: 16px;
+  width: 100%;
 }
