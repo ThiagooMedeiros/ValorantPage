@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   align-items: center;
 
@@ -8,16 +8,16 @@
 
   margin: 0 auto;
 
-  .title{   
+  .title {
     position: relative;
     margin-right: 24px;
 
-    img{
+    img {
       position: absolute;
       bottom: 0px;
       right: 0px;
     }
-    h1{
+    h1 {
       font-family: 'Druk', sans-serif;
       font-size: 70px;
       letter-spacing: 12px;
@@ -28,7 +28,4 @@
       writing-mode: vertical-rl;
     }
   }
-}
-.agents{
-  width: 100%;
 }
