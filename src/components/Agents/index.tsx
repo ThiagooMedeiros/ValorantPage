@@ -1,4 +1,4 @@
-import { Agent } from 'components/Agent'
+import { CardAgent } from 'components/CardAgent'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import styles from './styles.module.scss'
@@ -55,52 +55,52 @@ const agent = {
 export const Agents = () => (
   <Swiper className={styles.agents} spaceBetween={16} slidesPerView={4}>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
     <SwiperSlide>
-      <Agent agent={agent} />
+      <CardAgent {...agent} />
     </SwiperSlide>
   </Swiper>
 )
