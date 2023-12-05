@@ -52,55 +52,62 @@ const agent = {
   ]
 }
 
-export const Agents = () => (
-  <Swiper className={styles.agents} spaceBetween={16} slidesPerView={4}>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-    <SwiperSlide>
-      <CardAgent {...agent} />
-    </SwiperSlide>
-  </Swiper>
-)
+export const Agents = () => {
+  const loadAgents = async () => {
+    const route = 'https://valorant-api.com/v1/agents?language=pt-BR'
+    const response = await fetch(route).then(data => data.json())
+  }
+
+  return (
+    <Swiper className={styles.agents} spaceBetween={16} slidesPerView={4}>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CardAgent {...agent} />
+      </SwiperSlide>
+    </Swiper>
+  )
+}
