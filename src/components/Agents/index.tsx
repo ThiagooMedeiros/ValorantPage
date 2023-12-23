@@ -6,18 +6,16 @@ import type { Agent } from 'types/agent'
 import { CardAgent } from 'components/CardAgent'
 
 import styles from './styles.module.scss'
+import { loadAgents } from 'utils/loadAgents'
 
 export const Agents = () => {
   const [agents, setAgents] = useState<Agent[]>([])
-  const loadAgents = async () => {
-    const route = 'https://valorant-api.com/v1/agents?language=pt-BR'
-    const response = await fetch(route).then(data => data.json())
-
-    const data = response.data as Agent[]
-    setAgents(data.filter(agent => agent.fullPortrait))
+  const loadData = async () => {
+    const data = await loadAgents()
+    setAgents(data)
   }
   useEffect(() => {
-    loadAgents()
+    loadData()
   }, [])
 
   return (
